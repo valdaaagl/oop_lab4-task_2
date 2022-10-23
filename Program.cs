@@ -2,15 +2,15 @@
 {
     static void Main(string[] args)
     {
-        Pupil bob = new Pupil("Dima");
-        Pupil bill = new BadPupil("Daria");
-        Pupil mariz = new GoodPupil("Maria");  
-        Pupil vozniak = new ExellentPupil("Anton");         
+        Pupil pupil1 = new Pupil("Dima");
+        Pupil pupil2 = new BadPupil("Daria");
+        Pupil pupil3 = new GoodPupil("Maria");  
+        Pupil pupil4 = new ExellentPupil("Anton");         
  
-        var firstClassRoom = new ClassRoom(bill);
-        var secondClassRoom = new ClassRoom(bill, vozniak);
-        var thirdClassRomm = new ClassRoom(bill, vozniak, mariz);
-        var forthClassRomm = new ClassRoom(bill, vozniak, mariz, bob);
+        var firstClassRoom = new ClassRoom(pupil1);
+        var secondClassRoom = new ClassRoom(pupil1, pupil2);
+        var thirdClassRomm = new ClassRoom(pupil1, pupil2, pupil3);
+        var forthClassRomm = new ClassRoom(pupil1, pupil2, pupil3, pupil4);
         forthClassRomm.GetPupilsRead();
  
         Console.ReadLine();
